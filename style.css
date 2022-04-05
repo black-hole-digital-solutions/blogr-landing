@@ -1,0 +1,15 @@
+* {
+    margin: 0
+    padding: 0
+}
+
+.logo {
+    margin: 3% 5% 3% 7%;
+}
+
+#nav-bar {
+    background-color:black;
+    background-image: url(images/bg-pattern-intro-desktop.svg);
+    background-size: cover;
+    border-bottom-left-radius: 70px;
+}
