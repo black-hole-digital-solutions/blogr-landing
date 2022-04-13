@@ -1,18 +1,66 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Overpass', sans-serif;
 }
 
+body {
+    position:relative;
+    overflow:scroll;
+    width:100vw;
+}
+
+/* nav bar */
 .logo {
     margin: 3% 5% 3% 7%;
 }
 
 #nav-bar {
-    background-color:black;
+    background-color:hsl(353, 100%, 62%);
     background-image: url(images/bg-pattern-intro-desktop.svg);
-    background-size: cover;
+    background-size: 170%;
+    background-position: 35% 51%;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 70px;
 }
+
+#nav-bar button {
+    border-radius: 25px;
+    height: 45px;
+    width: 128px;
+    margin-bottom: 10%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+#banner h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.type-2 {
+    background-color:white;
+    color: hsl(356, 100%, 66%);
+}
+
+.type-1:hover {
+    background-color:white;
+    color: hsl(356, 100%, 66%)!important;
+    border: 1px solid white;
+}
+
+.type-2:hover {
+    background-color: transparent;
+    color:white;
+    border: 1px solid white;
+}
+
+/* main */
+
+main h1, h2 {
+    font-weight: 600;
+}
+
 
 #section-2 {
     height: 360px;
@@ -20,11 +68,50 @@
     border-bottom-left-radius: 70px;
 }
 
+#image-container {
+    position: relative;
+    left: -13%;
+    /* overflow: hidden; */
+}
+/* footer */
+
 footer {
     border-top-right-radius: 70px;
+
 }
 
 footer li {
     list-style: none;
 }
 
+footer div {
+    width: 90%;
+}
+
+footer .logo {
+    height:50px;
+}
+
+@media only screen and (max-width: 990px) {
+     body {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    #banner h1 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    li .type-1 {
+        color: black !important;
+    }
+
+    .dropdown-menu {
+        color: black;
+        font-weight: bold !important;
+    }
+
+    .navbar-collapse {
+        background-color:white;
+    }
+}
