@@ -72,6 +72,16 @@ li a {
     border: 1px solid white;
 }
 
+
+.arrow {
+    width:16px;
+    color: red;
+    font-size: 10px;
+    margin-bottom:3px;
+}
+
+
+
 /* main */
 main {
     max-width:100%;
@@ -81,6 +91,7 @@ main {
 main h1, h2 {
     font-weight: 600;
 }
+
 /* section 1 */
 #s1-title {
     margin-top: 8%;
@@ -113,11 +124,6 @@ main h1, h2 {
     background-repeat: no-repeat;
 }
 
-/* #s2-image-container {
-    background-image: url(images/bg-pattern-circles.svg);
-    background-size: 170%;
-    background-position: 35% 51%;
-} */
 
 #img-1 {
     z-index: 2;
@@ -147,7 +153,6 @@ main h1, h2 {
 
 footer {
     border-top-right-radius: 70px;
-
 }
 
 footer li {
@@ -156,6 +161,7 @@ footer li {
 
 footer div {
     width: 90%;
+    color:hsl(240, 2%, 79%)!important;
 }
 
 footer .logo {
@@ -163,6 +169,12 @@ footer .logo {
 }
 
 @media only screen and (max-width: 375px) {
+
+    body {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
     /* nav */
 
     #nav-bar {
@@ -174,6 +186,14 @@ footer .logo {
         background-repeat: no-repeat;
         
 
+    }
+
+    #navbarNavDropdown {
+        max-width: 90%!important;
+        margin-left:5%!important;
+        border: solid 1px black !important;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .logo {
@@ -189,29 +209,71 @@ footer .logo {
         width: 100%;
         color: black!important;
         text-align: center;
+        margin: 7px 0;
     }
 
     .dropdown-menu {
         color: black;
         width: 100%;
         font-weight: bold !important;
+        background-color:rgba(211, 211, 211, 0.952);
+        width: 85%!important;
+        opacity: 0.7;
+    }
 
-        
+    .nav-item {
+        flex-direction: column;
+    }
+
+    .dropdown-item {
+        display: flex;
+        justify-content:center;
+        font-weight: bold;
+        /* margin-left:7.5%;
+        background-color:lightgrey; */
     }
 
     .navbar-collapse {
         background-color:white;
     }
 
+    #product {
+        margin-top: 5%;
+    }
+
+    #line {
+        height:1px;
+        width: 85%;
+        background-color:hsl(240, 2%, 79%);
+        margin: 7.5%;
+    }
+
+    #login {
+        margin-left:0;
+        justify-content: center;
+    }
+
+    #login button {
+        margin-bottom:5px;
+    }
+
+    #sign-up {
+        justify-content: center;
+    }
+
+    #sign-up button {
+        background-image: linear-gradient(to right, hsla(13, 100%, 72%),hsl(353, 100%, 62%))!important;
+        color: white;
+    }
+
+
     #banner h1 {
         font-weight: 300;
         width: 85%;
         text-align: center;
     }
-     body {
-        max-width: 100%;
-        min-width: 100%;
-    }
+
+
     /* main */
     #banner h1 {
         font-weight: 600;
